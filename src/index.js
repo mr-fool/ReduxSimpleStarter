@@ -9,4 +9,4 @@ const App = function() {
 
 //Take this component's generated html and put it 
 //on the page (in the dom)
-ReactDOM.render(App);
+ReactDOM.render(<App/>, document.querySelector('.container'));
