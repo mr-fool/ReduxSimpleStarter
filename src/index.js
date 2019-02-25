@@ -7,7 +7,12 @@ const API_KEY = 'AIzaSyDCqCdFznaXXevzggHSzrR7oRmt4o1R5YA';
 //Create a new component. This should prodouce
 //some html
 const App = () => {
-    return <div>hi!</div>;
+    return (<div>
+
+    <SearchBar / >
+
+    </div>
+    );
 }
 
 //Take this component's generated html and put it 
