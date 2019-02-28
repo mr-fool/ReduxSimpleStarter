@@ -1,4 +1,5 @@
 import React from 'react';
+import * as he from 'he';
 
 const VideoDetail = ({video}) => {
     if(!video){
@@ -12,8 +13,8 @@ const VideoDetail = ({video}) => {
                 <iframe className="embed-responsive-item" src={url}></iframe>
             </div>
             <div className='details'>
-                <div>{video.snippet.title}</div>
-                <div>{video.snippet.description}</div>
+                <div>{he.decode(video.snippet.title)}</div>
+                <div>{he.decode(video.snippet.description)}</div>
             </div>
         </div>
     );
