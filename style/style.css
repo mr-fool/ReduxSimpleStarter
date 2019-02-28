@@ -1,0 +1,9 @@
+.search-bar {
+    margin: 20 px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 75%;
+    
+}
